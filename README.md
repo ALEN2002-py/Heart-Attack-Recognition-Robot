@@ -166,6 +166,7 @@ Arduino Uno
 ├── TX (D1)     ──►  ESP8266 RX
 └── RX (D0)     ──►  ESP8266 TX
 ```
+<img width="948" height="539" alt="image" src="https://github.com/user-attachments/assets/df9ea53c-b050-4c08-b065-ccc9865ee808" />
 
 > ⚠️ **Important:** Pins 9 and 10 are not suitable for PulseSensor PWM fade — their PWM conflicts with the interrupt-based sample timer. Pin 5 is used for fade output.
 
