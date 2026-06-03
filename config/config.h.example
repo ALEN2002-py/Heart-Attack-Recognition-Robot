@@ -1,0 +1,38 @@
+/**
+ * config.h.example
+ *
+ * Configuration template for Heart Attack Recognition Robot.
+ *
+ * SETUP INSTRUCTIONS:
+ * 1. Copy this file to src/HeartAttackMonitor/config.h
+ * 2. Replace all placeholder values with your actual credentials
+ * 3. Never commit config.h — it is in .gitignore
+ *
+ * Author: Alen Sebastian
+ */
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// ── Wi-Fi Credentials ─────────────────────────────────────────────
+#define WIFI_SSID       "YOUR_WIFI_NETWORK_NAME"
+#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
+
+// ── ThingSpeak Cloud Configuration ────────────────────────────────
+#define THINGSPEAK_DOMAIN    "api.thingspeak.com"
+#define THINGSPEAK_PORT      "80"
+#define THINGSPEAK_WRITE_KEY "YOUR_CHANNEL_WRITE_API_KEY"
+#define THINGSPEAK_CHANNEL   "YOUR_CHANNEL_ID"
+
+// ── Sensor Thresholds ─────────────────────────────────────────────
+#define PULSE_THRESHOLD      550    // Adjust based on sensor calibration (0–1024)
+#define TEMP_HIGH_ALERT      37.8f  // °C — fever alert threshold
+#define TEMP_LOW_ALERT       35.0f  // °C — hypothermia alert threshold
+#define BPM_HIGH_ALERT       110    // BPM — tachycardia alert
+#define BPM_LOW_ALERT        50     // BPM — bradycardia alert
+
+// ── Serial Baud Rate ──────────────────────────────────────────────
+#define SERIAL_BAUD_MAIN     9600
+#define SERIAL_BAUD_PULSE    115200  // Required by PulseSensorPlayground
+
+#endif // CONFIG_H

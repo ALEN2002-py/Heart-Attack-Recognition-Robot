@@ -1,0 +1,19 @@
+# Arduino build artefacts
+*.hex
+*.elf
+build/
+
+# Credentials and secrets — NEVER commit these
+src/HeartAttackMonitor/config.h
+
+# macOS junk
+.DS_Store
+__MACOSX/
+
+# Windows junk
+Thumbs.db
+desktop.ini
+
+# Arduino IDE temp files
+*.bak
+*~
